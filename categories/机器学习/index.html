@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/starry_favicon.png" alt="" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home | 主页</a><a class="navbar-item" href="/archives">Archives | 档案</a><a class="navbar-item" href="/categories">Categories | 分类</a><a class="navbar-item" href="/tags">Tags | 标签</a><a class="navbar-item" href="/about">About | 关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">Categories</a></li><li class="is-active"><a href="#" aria-current="page">机器学习</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-08-23T09:51:49.000Z" title="8/23/2021, 5:51:49 PM">2021-08-23</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-08-26T14:02:38.207Z" title="8/26/2021, 10:02:38 PM">2021-08-26</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><span> / </span><a class="link-muted" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">推荐系统</a></span><span class="level-item">a minute read (About 131 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/08/23/FM-%E7%B3%BB%E5%88%97%E6%A8%A1%E5%9E%8B%E6%80%A7%E8%83%BD%E6%AF%94%E8%BE%83/">FM 系列模型性能比较</a></h1><div class="content"><h1 id="基本-FM-模型包"><a href="#基本-FM-模型包" class="headerlink" title="基本 FM 模型包"></a><a target="_blank" rel="noopener" href="http://mufool.com/2017/11/20/fm/">基本 FM 模型包</a></h1><ul>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/starry_favicon.png" alt="" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home | 主页</a><a class="navbar-item" href="/archives">Archives | 档案</a><a class="navbar-item" href="/categories">Categories | 分类</a><a class="navbar-item" href="/tags">Tags | 标签</a><a class="navbar-item" href="/about">About | 关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">Categories</a></li><li class="is-active"><a href="#" aria-current="page">机器学习</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-08-23T09:51:49.000Z" title="8/23/2021, 5:51:49 PM">2021-08-23</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-08-27T02:26:18.667Z" title="8/27/2021, 10:26:18 AM">2021-08-27</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><span> / </span><a class="link-muted" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">推荐系统</a></span><span class="level-item">a minute read (About 135 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/08/23/FM-%E7%B3%BB%E5%88%97%E6%A8%A1%E5%9E%8B%E6%80%A7%E8%83%BD%E6%AF%94%E8%BE%83/">FM 系列模型性能比较</a></h1><div class="content"><h1 id="基本-FM-模型包"><a href="#基本-FM-模型包" class="headerlink" title="基本 FM 模型包"></a><a target="_blank" rel="noopener" href="http://mufool.com/2017/11/20/fm/">基本 FM 模型包</a></h1><ul>
 <li>libfm | C++11</li>
 <li>pywfm | python</li>
 <li>alphaFM | C++11</li>
@@ -159,6 +159,24 @@
 <td>2.3700</td>
 <td>0.6774</td>
 <td>0.0919</td>
+</tr>
+<tr>
+<td>8</td>
+<td>22</td>
+<td>20</td>
+<td>30</td>
+<td>4h20m</td>
+<td>5h10m</td>
+<td>2000000</td>
+<td>0.30264</td>
+<td>500000</td>
+<td>0.3809</td>
+<td>0.8165</td>
+<td>0.8437</td>
+<td>31979</td>
+<td>2.2959</td>
+<td>0.4705</td>
+<td>0.1144</td>
 </tr>
 </tbody></table>
 <p>train_naked 训练近似随机噪声<br>train_basic auc 有所提高</p>
