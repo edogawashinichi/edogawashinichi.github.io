@@ -69,7 +69,7 @@
             }
         });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
             loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
-        });</script></body></html>ss="headerlink" title="solution"></a>solution</h2><p>=&gt;直接改为分类-&gt;NaN<br>=&gt;改为分类并且特征归一化-&gt;结果正常(1000样本)<br>                      结果正常(10000样本)<br>                      临界点60万样本120特征<br>                      内存不足(全部样本)</p>
+        });</script></body></html></a>solution</h2><p>=&gt;直接改为分类-&gt;NaN<br>=&gt;改为分类并且特征归一化-&gt;结果正常(1000样本)<br>                      结果正常(10000样本)<br>                      临界点60万样本120特征<br>                      内存不足(全部样本)</p>
 <h1 id="problem-8"><a href="#problem-8" class="headerlink" title="problem 8"></a>problem 8</h1><p>模型验证</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">preds = fm.predict(X_test_csr)</span><br><span class="line">test_logloss = log_loss(y_test_cls, preds)</span><br></pre></td></tr></table></figure>
 <p>报错</p>
